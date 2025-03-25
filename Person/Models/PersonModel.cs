@@ -31,5 +31,14 @@ public class PersonModel
     é o próprio modelo.
   */
   public string Name { get; private set; }
-  
+
+  public void ChangeName(string name)
+  {
+    Name = name;
+  }
+
+  public void SetInactive()
+  {
+    Name = "Desativado";
+  }
 }
